@@ -1,81 +1,42 @@
-# Warehouse Inventory Analytics — Take-Home Assignment
+# Inventory Movements Analysis
 
-## Context
+## Overview
 
-You've been given a warehouse movement-level dataset (`inventory_movements.csv`,
-~5,000 rows) covering inbound, outbound, transfer, return, and adjustment
-movements across 6 warehouses. Ops wants to understand where inventory
-accuracy is breaking down and what's driving cost anomalies.
+This project analyzes an inventory movements dataset using PostgreSQL and Tableau to solve business questions related to inventory management, stock discrepancies, and relationship between various columns.
+---
 
-## Task
+## Setup
 
-1. Explore `inventory_movements.csv` and answer the 5 business questions
-   below in `BUSINESS_ANSWERS.md`. Back up every answer with a
-   query/calculation — don't eyeball it.
-2. Build a simple dashboard (any stack — Streamlit, a notebook, a small
-   React/Next app, Retool, whatever you're fastest in) showing the key
-   metrics behind your answers.
-3. Deploy it somewhere reachable by a URL (Vercel, Streamlit Cloud, Render,
-   Replit — your choice).
+### Prerequisites
 
-## You may use any AI tool
+- PostgreSQL 18 or later
+- DBeaver Community Edition
+- Tableau Public/Desktop
 
-Use whatever you're fastest and most comfortable with, including (not
-limited to):
+### Setup Steps
 
-- Streamlit
-- Vercel
-- ChatGPT
-- Claude
-- Emergent
-- Base44
-- Bolt.new
-- Lovable
-- Softgen
-- Glide
-- Rocket.new
-- Bubble
+1. Clone or download this repository.
+2. Create a PostgreSQL database with `inventory_movements.csv`
+3. Open DBeaver and connect to the PostgreSQL database.
+4. Execute the `script1.sql` for the query statements.
+5. Open the Tableau workbook (`.twb` or `.twbx`).
+6. Connect Tableau to the PostgreSQL database and refresh the data source if required.
 
-We expect you to use AI tools — that's how the job works too. What we're
-evaluating is your judgment in using them, not whether you typed every line
-yourself.
+---
 
-## Business Questions
+## Approach
 
-1. Which warehouse has the highest stock discrepancy rate, and what's
-   actually driving it?
-2. Is there a relationship between unit cost and quantity across suppliers?
-   Which supplier(s), if any, deviate from that pattern — and by how much?
-3. Which SKU(s) show signs of frequent stockouts or inventory imbalance
-   (e.g. negative or implausible stock levels)? What would you recommend
-   doing about it?
-4. Before trusting any of the above — what data quality issues did you find
-   in this dataset, and how did you handle them?
-5. If you could track exactly one metric weekly to catch inventory problems
-   early, what would it be and why?
+The project follows a structured data analytics workflow. The inventory movements dataset was imported into PostgreSQL using DBeaver, where SQL was used to query the data and answer business questions. This included checking for data quality issues, identifying patterns, and monitoring KPIs. The results were then visualized in Tableau through an interactive dashboard designed to help users monitor inventory health, identify high-risk SKUs, evaluate warehouse performance, and detect potential data quality issues.
 
-## Deliverables
+---
 
-Submit all of the following:
+## Files
 
-1. **Public GitHub repo** with your code — mandatory, regardless of which
-   tool/platform you build with. If your platform doesn't natively export
-   clean source (e.g. no-code builders), export/download the project and
-   push it to GitHub anyway.
-2. **Live URL** to your deployed dashboard
-3. **README.md** in your repo — your setup steps and a short note on your
-   approach
-4. **BUSINESS_ANSWERS.md** — written answers to all 5 questions. Charts alone
-   are not an answer; explain your reasoning and any caveats.
-5. **A 5-minute screen recording** (Loom or similar) walking through your
-   dashboard and your answers. We want to hear you reason out loud, not just
-   see the finished tool.
+- `script1.sql` – Queries
+- `inventory movements dashboard.twbx` – Tableau dashboard
 
-## One more thing
+---
 
-We may follow up with a short live conversation about your submission —
-come ready to explain and defend any specific choice you made, and to make a
-small change to your own analysis live if asked. This isn't a gotcha; it's how
-we make sure the thinking is yours.
+## Author
 
-Good luck — we're looking for how you think, not how polished the dashboard is.
+Gaurang Soni
