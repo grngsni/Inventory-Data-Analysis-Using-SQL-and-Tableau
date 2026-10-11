@@ -9,6 +9,7 @@ WH_06 (Pune) has the highest discrepancy (89).
 The common pattern in rows where the status is "Discrepancy" is that they one or more null values.
 
 **How you checked it (query/method):**
+
 I calculated the frequency of "Discrepancy" in status and grouped them by warehouse_id.
 ---
 
