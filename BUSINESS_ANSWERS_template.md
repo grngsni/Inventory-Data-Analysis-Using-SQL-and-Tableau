@@ -1,8 +1,5 @@
 # Business Answers
 
-Candidate name: Gaurang Soni
-Date: 31-07-2026
-
 ---
 
 ## Q1. Which warehouse has the highest stock discrepancy rate, and what's actually driving it?
