@@ -56,6 +56,6 @@ I would track the stock_after column for each SKU since it would help in prepari
 
 ---
 
-## Anything else you'd flag if this were a real dataset at FreightFox?
+## Other notes on the dataset:
 The data would be easier to understand if the order of the columns was cohesive: 
 customer_id -> movement_id -> sku_id -> supplier_id -> warehouse_id -> warehouse_city -> region -> movement_date -> expected_date -> unit_cost -> movement_type -> quantity -> stock_before -> stock_after -> status
